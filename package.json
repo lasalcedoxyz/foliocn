@@ -1,0 +1,24 @@
+{
+  "name": "foliocn",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:app": "pnpm --filter @foliocn/app dev",
+    "dev:api": "pnpm --filter @foliocn/api dev",
+    "dev:www": "pnpm --filter @foliocn/www dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.3.0",
+      "onFail": "download"
+    }
+  },
+  "type": "module"
+}

@@ -14,7 +14,6 @@ export default function ApplicationsIndex() {
   return (
     <div className="flex flex-col px-4 gap-6">
       <AppHeader
-        parentPage="Home"
         pageTitle="Applications"
         actions={
           <CreateApplicationDialog />
@@ -33,14 +32,14 @@ function CreateApplicationDialog() {
           New
         </Button>
       </DialogTrigger>
-      <DialogContent>
+      <DialogContent className="w-full max-w-lg">
         <DialogTitle>Create New Application</DialogTitle>
         <div className="grid grid-cols-2 gap-3">
-          <div className="flex flex-col h-20 justify-items-center place-content-center border">
+          <div className="cursor-pointer flex h-20 justify-center items-center border rounded-md">
             <p>Paste URL</p>
           </div>
-          <div className="flex flex-col h-20 justify-items-center place-content-center border">
-            <p> URL</p>
+          <div className="cursor-pointer flex h-20 justify-center items-center border rounded-md">
+            <p>Enter Manually</p>
           </div>
         </div>
       </DialogContent>

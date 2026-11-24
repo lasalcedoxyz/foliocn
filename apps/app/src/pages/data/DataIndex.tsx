@@ -1,5 +1,4 @@
-import { AppHeader } from "@/components/navigation/AppHeader";
-import { Button } from "@/components/ui/button"
+import { Section, SectionContent, SectionHeader, SectionTitle } from "@/components/Section";
 import {
   LucideSquareTerminal,
   LucideSquareKanban,
@@ -7,6 +6,7 @@ import {
   LucideGlobe,
   LucideDatabase
 } from "lucide-react";
+import { ExperienceForm } from "@/components/forms/profile/WorkExperienceForm";
 
 const navMain = [
   {
@@ -39,7 +39,14 @@ const navMain = [
 export default function DataIndex() {
   return (
     <div className="flex flex-col gap-6">
-      <AppHeader pageTitle="Profile" />
+      <Section>
+        <SectionHeader>
+          <SectionTitle>Experience</SectionTitle>
+        </SectionHeader>
+        <SectionContent>
+          <ExperienceForm/>
+        </SectionContent>
+      </Section>
     </div>
 
   )

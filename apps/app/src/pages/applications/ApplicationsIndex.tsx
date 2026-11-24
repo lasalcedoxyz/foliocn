@@ -13,12 +13,7 @@ import { LucidePlus } from "lucide-react"
 export default function ApplicationsIndex() {
   return (
     <div className="flex flex-col px-4 gap-6">
-      <AppHeader
-        pageTitle="Applications"
-        actions={
-          <CreateApplicationDialog />
-        }
-      />
+      <h2>Applications</h2>
     </div>
   )
 }
